@@ -51,8 +51,6 @@ class streamThread(threading.Thread):
 	def stop(self):
 		self.listener.stopStream = True
 
-
-
 class twitterListener(tweepy.StreamListener):
 	def on_status(self, status):
 		global app
